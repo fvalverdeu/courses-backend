@@ -1,0 +1,123 @@
+[
+  {
+    "img": "https://placehold.co/960x540/png?text=Angular+Avanzado",
+    "title": "Angular Avanzado",
+    "subtitle": "Crea aplicaciones modernas en Angular 21",
+    "description": "Arquitectura, formularios, rutas, rendimiento y buenas prácticas aplicadas a un proyecto real.",
+    "price": 249.00,
+    "tag": "Frontend",
+    "duration": "24 horas",
+    "instructor": "Fernando",
+    "schedule": "Lun/Mié/Vie 7:00pm - 9:00pm",
+    "active": true
+  },
+  {
+    "img": "https://placehold.co/960x540/png?text=React+Native",
+    "title": "React Native",
+    "subtitle": "Crea aplicaciones híbridas con el framework más popular",
+    "description": "Componentes, navegación, consumo de APIs, almacenamiento local y publicación de builds.",
+    "price": 229.00,
+    "tag": "Frontend",
+    "duration": "20 horas",
+    "instructor": "Fernando",
+    "schedule": "Mar/Jue 7:00pm - 9:30pm",
+    "active": true
+  },
+  {
+    "img": "https://placehold.co/960x540/png?text=Vue.js",
+    "title": "Vue.js",
+    "subtitle": "Desarrollo de Aplicaciones Web Modernas",
+    "description": "Reactividad, componentes, routing, estado y patrones típicos para apps modernas.",
+    "price": 189.00,
+    "tag": "Frontend",
+    "duration": "18 horas",
+    "instructor": "Fernando",
+    "schedule": "Sáb 9:00am - 1:00pm",
+    "active": true
+  },
+  {
+    "img": "https://placehold.co/960x540/png?text=Next.js",
+    "title": "Crea Aplicaciones con Next.js",
+    "subtitle": "Usa React de forma profesional",
+    "description": "Rutas, SSR/SSG, APIs, optimización y despliegue para proyectos reales.",
+    "price": 279.00,
+    "tag": "Frontend",
+    "duration": "22 horas",
+    "instructor": "Fernando",
+    "schedule": "Lun/Mié 7:00pm - 9:30pm",
+    "active": true
+  },
+  {
+    "img": "https://placehold.co/960x540/png?text=NestJS+Microservicios",
+    "title": "Microservicios con Nestjs",
+    "subtitle": "Desarrollo de aplicaciones empresariales",
+    "description": "Diseño de microservicios, mensajería, módulos, testing básico y documentación.",
+    "price": 299.00,
+    "tag": "Backend",
+    "duration": "26 horas",
+    "instructor": "Fernando",
+    "schedule": "Mar/Jue 7:00pm - 9:30pm",
+    "active": true
+  },
+  {
+    "img": "https://placehold.co/960x540/png?text=API+REST+Node.js",
+    "title": "Mi Primera API REST con Node.js",
+    "subtitle": "Aprende a crear aplicaciones web",
+    "description": "Express desde cero: rutas, middlewares, validaciones básicas y conexión a BD.",
+    "price": 159.00,
+    "tag": "Backend",
+    "duration": "14 horas",
+    "instructor": "Fernando",
+    "schedule": "Sáb 3:00pm - 6:30pm",
+    "active": true
+  },
+  {
+    "img": "https://placehold.co/960x540/png?text=JS+Fundamentos",
+    "title": "Fundamentos de Programación con JavaScript",
+    "subtitle": "Aprende creando con el lenguaje de la Web",
+    "description": "Variables, funciones, objetos, arrays, DOM y asincronía con ejercicios guiados.",
+    "price": 99.00,
+    "tag": "Fundamentos",
+    "duration": "16 horas",
+    "instructor": "Fernando",
+    "schedule": "Dom 9:00am - 1:00pm",
+    "active": true
+  },
+  {
+    "img": "https://placehold.co/960x540/png?text=PostgreSQL",
+    "title": "PostgreSQL para Desarrolladores",
+    "subtitle": "Modelado, consultas y optimización básica",
+    "description": "Tablas, relaciones, índices, joins y diseño mínimo para aplicaciones web.",
+    "price": 179.00,
+    "tag": "BDatos",
+    "duration": "12 horas",
+    "instructor": "Fernando",
+    "schedule": "Mié/Vie 7:00pm - 9:00pm",
+    "active": true
+  },
+  {
+    "img": "https://placehold.co/960x540/png?text=Git+GitHub",
+    "title": "Git y GitHub desde Cero",
+    "subtitle": "Control de versiones para proyectos reales",
+    "description": "Commits, ramas, merges, pull requests y flujo de trabajo para equipos.",
+    "price": 89.00,
+    "tag": "Herramientas",
+    "duration": "8 horas",
+    "instructor": "Fernando",
+    "schedule": "Mar 7:00pm - 9:00pm",
+    "active": true
+  },
+  {
+    "img": "https://placehold.co/960x540/png?text=CSS+Moderno",
+    "title": "CSS Moderno",
+    "subtitle": "Layouts responsive con Flexbox y Grid",
+    "description": "Componentes, responsive, utilidades y patrones de UI para landing pages.",
+    "price": 109.00,
+    "tag": "Frontend",
+    "duration": "10 horas",
+    "instructor": "Fernando",
+    "schedule": "Jue 7:00pm - 9:30pm",
+    "active": false
+  }
+]
+
