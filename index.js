@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 const express = require('express');
 const cors = require('cors');
 const jwt = require('jsonwebtoken');
@@ -6,19 +8,20 @@ const { Pool } = require('pg');
 const app = express();
 
 // Config mínima (sin .env para el taller)
-const PORT = 3000;
-const JWT_SECRET = 'dev-secret-change-me';
-const ADMIN_USER = 'admin';
-const ADMIN_PASS = 'admin123';
+const PORT = process.env.PORT || 3000;
+const JWT_SECRET = process.env.JWT_SECRET || 'dev-secret-change-me';
+const ADMIN_USER = process.env.ADMIN_USER || 'admin';
+const ADMIN_PASS = process.env.ADMIN_PASS || 'admin123';
 
 // PostgreSQL local (ajusta según tu instalación)
 // Sugerido: crear BD `courses_db` y ejecutar db/init.sql + db/seed.sql
+const isProduction = process.env.NODE_ENV === 'production';
+
 const pool = new Pool({
-  host: 'localhost',
-  port: 5432,
-  user: 'postgres',
-  password: 'admin',
-  database: 'courses_db'
+  connectionString: process.env.DATABASE_URL,
+  ssl: isProduction
+    ? { rejectUnauthorized: false }
+    : false
 });
 
 app.use(cors());
@@ -230,6 +233,15 @@ app.patch('/courses/:id/active', requireAuth, async (req, res) => {
     return res.json(result.rows[0]);
   } catch {
     return res.status(500).json({ message: 'Error al activar/desactivar curso' });
+  }
+});
+
+app.get('/test-db', async (req, res) => {
+  try {
+    const result = await pool.query('SELECT NOW()');
+    res.json(result.rows);
+  } catch (error) {
+    res.status(500).json(error.message);
   }
 });
 
